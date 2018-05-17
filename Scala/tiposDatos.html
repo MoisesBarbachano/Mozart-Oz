@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bow &mdash; Free Website Template, Free HTML5 Template by FreeHTML5.co</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
+
+
+  <!--
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE
+	DESIGNED & DEVELOPED by FreeHTML5.co
+
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+	<div class="fh5co-loader"></div>
+
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					<div id="fh5co-logo"><a href="index.html">Bow.</a></div>
+				</div>
+				<div class="col-xs-10 text-right menu-1">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li class="has-dropdown active">
+							<a href="services.html">Services</a>
+							<ul class="dropdown">
+								<li><a href="#">Web Design</a></li>
+								<li><a href="#">eCommerce</a></li>
+								<li><a href="#">Branding</a></li>
+								<li><a href="#">API</a></li>
+							</ul>
+						</li>
+						<li class="has-dropdown">
+							<a href="#">Tools</a>
+							<ul class="dropdown">
+								<li><a href="#">HTML5</a></li>
+								<li><a href="#">CSS3</a></li>
+								<li><a href="#">Sass</a></li>
+								<li><a href="#">jQuery</a></li>
+							</ul>
+						</li>
+						<li><a href="work.html">Work</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+
+	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/img_bg_2.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<h1>Tipos de Datos</h1>
+							<h2>En Scala, todos los valores tienen un tipo, incluyendo funciones y valores numéricos. El diagrama ilustra un subconjunto de la jerarquía de tipos.</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="fh5co-services-section">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="feature-center">
+					<span class="icon">
+						<img src="images/tiposUnificados.png" alt="Tipos de datos">
+					</span>
+					<h3>Jerarquía de tipos Scala</h3>
+					<p>Any  es un supertipo de todos los tipos, también llamado el tipo más alto. Define ciertos métodos universales como equals, hashCode y toString. Any tiene dos subclases directas: AnyVal y AnyRef.</p>
+					<p>AnyVal  representa tipos de valores. Hay 9 tipos de valores predefinidos y son no-nullable: Double, Float, Long, Int, Short, Byte, Char, Unit y Boolean.  Unit es un tipo el cual no carga con información significativa. Hay exactamente una instancia de Unit  la cual puede ser declarada literalmente como: (). Todas las funciones retornan algo y en ocasiones Unit es usado para retornar tipos.</p>
+					<p>AnyRef representa tipos de referencia. Todos los tipo de no-valores son definidos como tipos de referencia. Todo tipo de usuario definido en Scala es un subtipo de AnyRef. Si Scala es usado en el contexto del entorno de tiempo de ejecución de Java, AnyRef  corresponde al java.lang.Object.</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="fh5co-started">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>A continuación podemos observar un ejemplo:</h2>
+					<p>val list: List[Any] = List(</p>
+					<p>"a string"</p>
+					<p>732, // an integer</p>
+					<p>'c', //a character </p>
+					<p>true, // a boolean value </p>
+					<p>() => "an anonymous function returning a string"</p>
+					<p>)</p>
+					<p>list.foreach(element => println(element))</p>
+					<p>Define una variable list de tipo List[Any]. List es inicializado con elementos de varios tipos, pero todos ellos son instancia de scala.Any, así puedes agregarlos a list.</p>
+					<p>Aquí está la salida del programa</p>
+					<p>a string</p>
+					<p>732</p>
+					<p>c</p>
+					<p>true</p>
+					<p>< function ></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-services-section">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="feature-center">
+					<h3>Casteo de tipos</h3>
+					<p>Los tipos de valores pueden ser casteados de la siguiente forma:</p>
+					<span>
+						<img src="images/tiposUnificados.png" alt="Tipos de datos">
+					</span>
+					<p>Castear es unidireccional. Por ejemplo, esto no compilaria:</p>
+					<p> <strong>val</strong> x: Long = 987654321</p>
+					<p> <strong>val</strong> y: Float = x //9.8765434E8</p>
+					<p> <strong>val</strong> z: Long = y //Does not conform</p>
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-started">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Nothing y null</h2>
+					<p>Nothing es un subtipo de todos los tipos, también es llamado el tipo más bajo. No hay valor que tenga tipo Nothing. Un uso común es para señalar la no-terminación como un lanzamiento de una excepción, salida de programa o un loop infinito.</p>
+					<p>Null es un subtipo de todos los tipos de referencia. Tiene un valor simple identificado por la palabra clave null. Null es proporcionado en la mayoría de ocasiones para interoperabilidad con otros JVM lenguajes y casi nunca debería ser usado en el código de Scala. </p>
+					<p> <strong>El compilador de Scala a menudo puede inferir el tipo de una expresión sin que se lo declares explícitamente.</strong> </p>
+					<p>Por ejemplo:</p>
+					<p> <strong>val</strong> businessName = "Montreux Jazz Café" </p>
+					<p>El compilador puede detectar que businessName es un String. Funciona de manera similar con metodos:</p>
+					<p> <strong>def</strong> squareOf(x:Int)= x*x</p>
+					<p>El compilador puede inferir que el tipo de retorno es un Int, así que no se requiere especificar el tipo de retorno.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small>
+						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
+					</p>
+					<p>
+						<ul class="fh5co-social-icons">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
