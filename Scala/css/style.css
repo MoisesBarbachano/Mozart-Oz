@@ -525,7 +525,7 @@ form label {
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 30px;
-  color: red;
+
 }
 #fh5co-header .display-tc .btn,
 #fh5co-counter .display-tc .btn,
@@ -845,6 +845,10 @@ form label {
 .feature-image img {
   width: 100%;
 }
+#imagenScala{
+  padding-top: 30%;
+}
+
 
 .feature-left {
   float: left;
@@ -1576,6 +1580,8 @@ form label {
 .row-pb-sm {
   padding-bottom: 2em !important;
 }
+
+
 
 .fh5co-loader {
   position: fixed;
