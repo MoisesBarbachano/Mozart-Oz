@@ -388,7 +388,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .about-content .desc {
   background: #fff;
-  padding: 20px;
+  padding-top: 25%;
 }
 
 .fh5co-staff {
@@ -1608,5 +1608,16 @@ form label {
 margin-left: 20%;
 }
 
+.listas{
+list-style-type: none;
+}
 
+i.icon-check {
+    color: green;
+}
+
+#terminal{
+padding-top: 32%;
+width: 80%;
+}
 /*# sourceMappingURL=style.css.map */
