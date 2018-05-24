@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title> Scala &mdash; Representación Semantica</title>
+	<title> Representación Semántica</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -71,17 +71,7 @@
 								<li><a href="subProgramas.html">Subprogramas</a></li>
 							</ul>
 						</li>
-						<li class="has-dropdown">
-							<a href="#">Tools</a>
-							<ul class="dropdown">
-								<li><a href="#">HTML5</a></li>
-								<li><a href="#">CSS3</a></li>
-								<li><a href="#">Sass</a></li>
-								<li><a href="#">jQuery</a></li>
-							</ul>
-						</li>
-						<li><a href="work.html">Work</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="contact.html">Contacto</a></li>
 					</ul>
 				</div>
 			</div>
@@ -109,32 +99,109 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="feature-center fh5co-heading">
-					<h1>Expresiones </h1>
-					<h3>1.Operadores</h3>
-					<p>Scala permite operadores como:</p>
-					<p>Operadores Aritméticos -> (+,-,*,%,/)</p>
-					<p>Operadores Relacionales -> (>,<,>=,=<,!=,==)</p>
-					<p>Operadores Lógicos -> (&&,||,!)</p>
+					<h1 id="tl">Expresiones </h1>
+					<div class="col-md-4">
+	   				<h3>1.Operadores</h3>
+						<p>Scala permite operadores como:</p>
+						<table style="width:100%">
+  <tr>
+    <th>Operadores</th>
+    <th>Ejemplos</th>
+  </tr>
+  <tr>
+    <td>Aritméticos</td>
+    <td>+,-,*,%,/</td>
 
-					<h3>2.Tipos de datos</h3>
-					<p>En Scala los tipos de datos son clases, algunos ejemplos:</p>
-						<p>Byte		8 bit con signo</p>
-						<p>Short		16 bit con signo</p>
-						<p>Long		64 bit con signo</p>
-						<p>Int		32 bit con signo</p>
-						<p>Char		16 bit con signo</p>
-						<p>Float		32 bit flotante con signo</p>
-						<p>Double	 	64 bit flotante con signo</p>
+  </tr>
+  <tr>
+    <td>Relacionales</td>
+    <td>>,<,>=,=<,!=,==</td>
 
+  </tr>
+  <tr>
+    <td>Lógicos</td>
+    <td>&&,||,!</td>
+
+  </tr>
+</table>
+					</div>
+					<div class="col-md-4">
+						<h3>2.Tipos de datos</h3>
+							<p>En Scala los tipos de datos son clases</p>
+						<table style="width:100%">
+	<tr>
+		<th>Tipos</th>
+		<th>Ejemplos</th>
+	</tr>
+	<tr>
+		<td>Byte</td>
+		<td>8 bit con signo</td>
+
+	</tr>
+	<tr>
+		<td>Short</td>
+		<td>16 bit con signo</td>
+
+	</tr>
+	<tr>
+		<td>Int</td>
+		<td>32 bit con signo</td>
+
+	</tr>
+	<tr>
+		<td>Char</td>
+		<td>16 bit con signo</td>
+
+	</tr>
+	<tr>
+		<td>Float</td>
+		<td>32 bit con signo</td>
+
+	</tr>
+	<tr>
+		<td>Double</td>
+		<td>64 bit con signo</td>
+
+	</tr>
+
+	<tr>
+		<td>Long</td>
+		<td>64 bit con signo</td>
+
+	</tr>
+</table>
+					</div>
+
+					<div class="col-md-4 ">
 						<h3>3.Evaluación de expresiones</h3>
 						<p>Dentro de una expresión, los operadores se evalúan de acuerdo a su orden de preferencia.
-						De mayor preferencia a menor
-						</p>
-						<p>* / %</p>
-						<p>+ :</p>
-						<p>=!</p>
-						<p><></p>
-						<p>&</p>
+						De mayor preferencia a menor</p>
+							<table style="width:100%">
+						<tr>
+							<th>Evaluación</th>
+
+						</tr>
+						<tr>
+							<td>* / %</td>
+
+
+						</tr>
+						<tr>
+							<td>+ :<</td>
+
+
+						</tr>
+						<tr>
+							<td><></td>
+
+
+						</tr>
+						<tr>
+							<td>&</td>
+
+						</tr>
+					</table>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -155,11 +222,20 @@
 			<div class="row animate-box">
 				<div class="feature-center fh5co-heading mt col-md-4 animate-box">
 					<h1>Reglas de Ejecución</h1>
-					<p>Se realiza el código:</p>
-					<p>> scalac HolaMundo Scala</p>
-					<p>y ejecutamos</p>
-					<p>Una vez compilado, un programa Scala se puede ejecutar utilizando el comando scala. Su uso es muy similar al del comando java utilziado para ejecutar programas Java, y acepta las mismas opciones. Se puede ejecutar mediante el siguiente comando:</p>
-					<p>> scala -classpath, HolaMundo</p>
+					<img id="gif" class="img-responsive text-center"src="images/giphy.gif">
+				<ol>
+					<li>
+						<p>Se realiza el código</p>
+					</li>
+					<li>
+							<p>Ejecutamos</p>
+					</li>
+					<li>
+
+								<p>> scala -classpath, HolaMundo</p>
+					</li>
+				</ol>
+
 				</div>
 			</div>
 		</div>
@@ -168,12 +244,17 @@
 
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
+			<div class="col-md-12 text-center">
+				<h3>Equipo</h3>
+				<p>Conformado por Moisés Barbachano, José Cetina, Juan Moguel y José Avila.</p>
+				<p><a href="https://www.scala-lang.org/" target="_blank">Conoce más</a></p>
+			</div>
 
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small>
-						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
+						<small class="block">&copy; 2018 BuyPack. All Rights Reserved.</small>
+						<small class="block">Designed by BuyPack</small>
 					</p>
 					<p>
 						<ul class="fh5co-social-icons">
