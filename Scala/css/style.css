@@ -1596,5 +1596,17 @@ form label {
 .js .animate-box {
   opacity: 0;
 }
+.logito{
+  width: 145%;
+  height: 145%;
+  margin-top: -60%;
+  margin-left: -16%;
+}
+#junta{
+
+  width: 89%;
+margin-left: 20%;
+}
+
 
 /*# sourceMappingURL=style.css.map */
