@@ -94,17 +94,41 @@
 		</div>
 	</header>
 
-	<div id="fh5co-services-section">
+	<div id="fh5co-services-section" class="esp">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="feature-center">
+					<h3>Jerarquía de tipos Scala</h3>
 					<span class="icon">
 						<img src="images/tiposUnificados.png" alt="Tipos de datos">
 					</span>
-					<h3>Jerarquía de tipos Scala</h3>
-					<p>Any  es un supertipo de todos los tipos, también llamado el tipo más alto. Define ciertos métodos universales como equals, hashCode y toString. Any tiene dos subclases directas: AnyVal y AnyRef.</p>
-					<p>AnyVal  representa tipos de valores. Hay 9 tipos de valores predefinidos y son no-nullable: Double, Float, Long, Int, Short, Byte, Char, Unit y Boolean.  Unit es un tipo el cual no carga con información significativa. Hay exactamente una instancia de Unit  la cual puede ser declarada literalmente como: (). Todas las funciones retornan algo y en ocasiones Unit es usado para retornar tipos.</p>
-					<p>AnyRef representa tipos de referencia. Todos los tipo de no-valores son definidos como tipos de referencia. Todo tipo de usuario definido en Scala es un subtipo de AnyRef. Si Scala es usado en el contexto del entorno de tiempo de ejecución de Java, AnyRef  corresponde al java.lang.Object.</p>
+
+					<div class="col-md-10 col-md-offset-1 text-center">
+						<div class="col-md-4">
+							<div class="banda">
+
+							</div>
+							<div class="text-center soft">
+									<p>Any  es un supertipo de todos los tipos, también llamado el tipo más alto. Define ciertos métodos universales como equals, hashCode y toString. Any tiene dos subclases directas: AnyVal y AnyRef.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="banda">
+
+							</div>
+							<div class="text-center soft">
+									<p>AnyVal  representa tipos de valores. Hay 9 tipos de valores predefinidos y son no-nullable: Double, Float, Long, Int, Short, Byte, Char, Unit y Boolean.  Unit es un tipo el cual no carga con información significativa. Hay exactamente una instancia de Unit  la cual puede ser declarada literalmente como: (). Todas las funciones retornan algo y en ocasiones Unit es usado para retornar tipos.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="banda">
+
+							</div>
+							<div class="text-center soft">
+								<p>AnyRef representa tipos de referencia. Todos los tipo de no-valores son definidos como tipos de referencia. Todo tipo de usuario definido en Scala es un subtipo de AnyRef. Si Scala es usado en el contexto del entorno de tiempo de ejecución de Java, AnyRef  corresponde al java.lang.Object.</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -133,15 +157,19 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="feature-center">
-					<h3>Casteo de tipos</h3>
-					<p>Los tipos de valores pueden ser casteados de la siguiente forma:</p>
-					<span>
-						<img src="images/tiposUnificados.png" alt="Tipos de datos">
-					</span>
-					<p id="holi">Castear es unidireccional. Por ejemplo, esto no compilaria:</p>
-					<p> <strong>val</strong> x: Long = 987654321</p>
-					<p> <strong>val</strong> y: Float = x //9.8765434E8</p>
-					<p> <strong>val</strong> z: Long = y //Does not conform</p>
+					<div class="col-md-6">
+							<h3>Casteo de tipos</h3>
+						<p>Los tipos de valores pueden ser casteados de la siguiente forma:</p>
+						<p>Castear es unidireccional. Por ejemplo, esto no compilaria:</p>
+						<p> <strong>val</strong> x: Long = 987654321</p>
+						<p> <strong>val</strong> y: Float = x //9.8765434E8</p>
+						<p> <strong>val</strong> z: Long = y //Does not conform</p>
+					</div>
+					<div class="col-md-6">
+						<span>
+						<img id="tipos" src="images/tiposUnificados.png" alt="Tipos de datos">
+						</span>
+					</div>
 					</div>
 			</div>
 		</div>
@@ -152,14 +180,19 @@
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Nothing y null</h2>
-					<p>Nothing es un subtipo de todos los tipos, también es llamado el tipo más bajo. No hay valor que tenga tipo Nothing. Un uso común es para señalar la no-terminación como un lanzamiento de una excepción, salida de programa o un loop infinito.</p>
-					<p>Null es un subtipo de todos los tipos de referencia. Tiene un valor simple identificado por la palabra clave null. Null es proporcionado en la mayoría de ocasiones para interoperabilidad con otros JVM lenguajes y casi nunca debería ser usado en el código de Scala. </p>
-					<p> <strong>El compilador de Scala a menudo puede inferir el tipo de una expresión sin que se lo declares explícitamente.</strong> </p>
-					<p>Por ejemplo:</p>
-					<p> <strong>val</strong> businessName = "Montreux Jazz Café" </p>
-					<p>El compilador puede detectar que businessName es un String. Funciona de manera similar con metodos:</p>
-					<p> <strong>def</strong> squareOf(x:Int)= x*x</p>
-					<p>El compilador puede inferir que el tipo de retorno es un Int, así que no se requiere especificar el tipo de retorno.</p>
+					<div class="col-md-6">
+							<p class="mouse">Nothing es un subtipo de todos los tipos, también es llamado el tipo más bajo. No hay valor que tenga tipo Nothing. Un uso común es para señalar la no-terminación como un lanzamiento de una excepción, salida de programa o un loop infinito.</p>
+					</div>
+					<div class="col-md-6">
+						<p class="mouse">Null es un subtipo de todos los tipos de referencia. Tiene un valor simple identificado por la palabra clave null. Null es proporcionado en la mayoría de ocasiones para interoperabilidad con otros JVM lenguajes y casi nunca debería ser usado en el código de Scala. </p>
+					</div>
+
+          <p class="mouse"> <strong>El compilador de Scala a menudo puede inferir el tipo de una expresión sin que se lo declares explícitamente.</strong> </p>
+					<p class="mouse">Por ejemplo:</p>
+					<p class="mouse"> <strong>val</strong> businessName = "Montreux Jazz Café" </p>
+					<p class="mouse">El compilador puede detectar que businessName es un String. Funciona de manera similar con metodos:</p>
+					<p class="mouse"> <strong>def</strong> squareOf(x:Int)= x*x</p>
+					<p class="mouse">El compilador puede inferir que el tipo de retorno es un Int, así que no se requiere especificar el tipo de retorno.</p>
 				</div>
 			</div>
 		</div>
