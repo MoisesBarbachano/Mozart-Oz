@@ -1636,4 +1636,49 @@ table, th, td {
 
 padding-bottom: 5%;
 }
+
+.text{
+
+  padding-top: 10%;
+}
+
+.item{
+
+  width: 50%;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img{
+max-width: none;
+margin-left: 12%;
+}
+
+.carousel-control.right{
+background-image: none;
+}
+
+.carousel-control.left{
+background-image: none;
+}
+
+.cuadros{
+background-color:transparent;
+-webkit-box-shadow: 10px 2px 29px -18px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 2px 29px -18px rgba(0,0,0,0.75);
+box-shadow: 10px 2px 29px -18px rgba(0,0,0,0.75);
+padding-top: 5%;
+    height: 335px;
+}
+
+.cuadros p{
+
+  color: white!important;
+}
+
+.maya{
+padding-top: 10%;
+}
+
+#holi{
+  padding-top: 10%;
+}
 /*# sourceMappingURL=style.css.map */
