@@ -1665,8 +1665,8 @@ background-color:transparent;
 -webkit-box-shadow: 10px 2px 29px -18px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 2px 29px -18px rgba(0,0,0,0.75);
 box-shadow: 10px 2px 29px -18px rgba(0,0,0,0.75);
-padding-top: 5%;
-    height: 335px;
+padding-top: 0%;
+    height: 400px;
 }
 
 .cuadros p{

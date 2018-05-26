@@ -70,17 +70,7 @@
 								<li><a href="subProgramas.html">Subprogramas</a></li>
 							</ul>
 						</li>
-						<li class="has-dropdown">
-							<a href="#">Tools</a>
-							<ul class="dropdown">
-								<li><a href="#">HTML5</a></li>
-								<li><a href="#">CSS3</a></li>
-								<li><a href="#">Sass</a></li>
-								<li><a href="#">jQuery</a></li>
-							</ul>
-						</li>
-						<li><a href="work.html">Work</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="contat.html">Contacto</a></li>
 					</ul>
 				</div>
 			</div>
@@ -96,10 +86,15 @@
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1>Expresiones y Asignaciones</h1>
-							<h2>En Scala los operadores son métodos. Cualquier método con un simple parametro puede ser usado como un operador infijo. Por ejemplo, + puede ser llamado con punto-notación.</h2>
-							<p>10.+(1)</p>
-							<p>De cualquier forma, es más fácil leerlo como un operador infijo:</p>
-							<p>10 + 1</p>
+							<h2>En Scala los operadores son métodos. Cualquier método con un simple parametro puede ser usado como un operador infijo.</h2>
+							<table style="width:100%">
+	  <tr>
+			<th><h2>Por ejemplo, + puede ser llamado con punto-notación:
+			   10.+(1)</h2></th>
+			<th><h2>De cualquier forma, es más fácil leerlo como un operador infijo:
+			   10 + 1</h2></th>
+	  </tr>
+	</table>
 						</div>
 					</div>
 				</div>
@@ -113,8 +108,13 @@
 			<div class="row animate-box">
 				<div class="feature-center">
 					<h3>Definiendo y usando operadores</h3>
+					<div class="col-md-4">
+						<table style="width:100%">
+					<tr>
+					<td>
 					<p>Puedes usar cualquier identificador legal como un operador. Esto incluye un nombre como “add” o símbolos como “+”.</p>
 					<p>Ejemplo:</p>
+
 					<p> <strong>case class Vec</strong>(val x: Double, val y: Double) {</p>
 					<p>def +(that: Vec) = new Vec(this.x + that.x, this.y + that.y)</p>
 					<p>}</p>
@@ -124,17 +124,39 @@
 					<p>val vector3 = vector1 + vector2</p>
 					<p>vector3.x  // 3.0</p>
 					<p>vector3.y  // 3.0</p>
-					<p> </p>
-					<p>La clase Vec tiene un método “+” el cual usamos para sumar vector1 y vector2. Usando paréntesis, puedes construir expresiones complejas con sintaxis que pueda ser leída. Aquí está la definición de la clase MyBool la cual incluye métodos “and” y “or”.</p>
-					<p> <strong>case class</strong> MyBool(x: Boolean) { </p>
-					<p>def and(that: MyBool): MyBool = if (x) that else this</p>
-					<p>def or(that: MyBool): MyBool = if (x) this else that</p>
-					<p>def negate: MyBool = MyBool(!x)</p>
-					<p>}</p>
-					<p> </p>
-					<p>Ahora es posible usar “and” y “or” como operadores infijos:</p>
+					<p> </p></td>
+
+					</tr>
+					</table>
+								</div>
+								<div class="col-md-4">
+									<table style="width:100%">
+				<tr>
+					<td>
+						<p>La clase Vec tiene un método “+” el cual usamos para sumar vector1 y vector2.</p>
+						<p>Usando paréntesis, puedes construir expresiones complejas con sintaxis que pueda ser leída.</p>
+						<p>Aquí está la definición de la clase MyBool la cual incluye métodos “and” y “or”.</p>
+
+						<p> <strong>case class</strong> MyBool(x: Boolean) { </p>
+						<p>def and(that: MyBool): MyBool = if (x) that else this</p>
+						<p>def or(that: MyBool): MyBool = if (x) this else that</p>
+						<p>def negate: MyBool = MyBool(!x)</p>
+						<p>}</p>
+						<p> </p>
+					</td>
+				</td>
+				</table>
+								</div>
+								<div class="col-md-4">
+									<table style="width:100%">
+				<tr>
+					<td><p>Ahora es posible usar “and” y “or” como operadores infijos:</p>
 					<p> <strong>def not</strong>(x: MyBool) = x.negate </p>
-					<p> <strong>def xor</strong>(x: MyBool, y: MyBool) = (x or y) and not(x and y) </p>
+					<p> <strong>def xor</strong>(x: MyBool, y: MyBool) = (x or y) and not(x and y) </p></td>
+				</tr>
+				</table>
+								</div>
+
 				</div>
 			</div>
 
@@ -144,22 +166,26 @@
 	<div id="fh5co-started">
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+				<div class="col-md-12  text-center fh5co-heading">
 					<h2>Precedencia</h2>
-					<p>Cuando una expresión usa múltiples operadores, éstos son evaluados basados en la prioridad del primer carácter.</p>
-					<p>* / %</p>
-					<p>+ -</p>
-					<p>:</p>
-					<p>= !</p>
-					<p>< ></p>
-					<p>&</p>
-					<p>^</p>
-					<p>|</p>
-					<p>(all letters)</p>
-					<p>En el siguiente ejemplo podemos ver que ?^ tiene la más alta precedencia porque empieza con el caracter ? . + tiene la segunda mayor precedencia, seguido de ^?, ==> , | y less.</p>
-					<p>a + b ^? c ?^ d less a ==> b | c</p>
-					<p>Es equivalente a </p>
-					<p>((a + b) ^? (c ?^ d)) less ((a ==> b) | c)</p>
+					<div class="col-md-4 col-md-offset-1 text-center cuadros">
+						<p>Cuando una expresión usa múltiples operadores, éstos son evaluados basados en la prioridad del primer carácter.</p>
+						<p>* / %</p>
+						<p>+ -</p>
+						<p>:</p>
+						<p>= !</p>
+						<p>< ></p>
+						<p>&</p>
+						<p>^</p>
+						<p>|</p>
+						<p>(all letters)</p>
+					</div>
+					<div class="col-md-4 col-md-offset-1 text-center cuadros">
+						<p>En el siguiente ejemplo podemos ver que ?^ tiene la más alta precedencia porque empieza con el caracter ? . + tiene la segunda mayor precedencia, seguido de ^?, ==> , | y less.</p>
+						<p>a + b ^? c ?^ d less a ==> b | c</p>
+						<p>Es equivalente a </p>
+						<p>((a + b) ^? (c ?^ d)) less ((a ==> b) | c)</p>
+					</div>
 				</div>
 			</div>
 		</div>
