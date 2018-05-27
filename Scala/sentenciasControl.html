@@ -81,11 +81,18 @@
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
+				<div class="col-md-8 col-md-offset-2 text-center ">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<div class="col-md-12 cuadros">
+							<p> </p>;
+							<p> </p>;
 							<h1>Sentencias de Control</h1>
+							<table style="width:100%">
 							<h2>Las instrucciones de control se pueden separar en instrucciones de repetición y de selección.Entre estos nos encontramos con los if/else, while, do while y for.</h2>
+							</table>
+							<p></p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -98,30 +105,35 @@
 
 			<div class="row animate-box">
 				<div class="feature-center">
-					<span class="icon">
-						<i class="icon-help2"></i>
-					</span>
-					<h3>If / else</h3>
-					<p>La estructura de control if, permite decidir sobre la ejecución de dos secuencias de instrucciones de manera condicional sobre una expresión que evalúa a verdadero o falso. Funciona de manera análoga al operador ternario del lenguaje C, es decir un bloque if retorna un valor al completar su ejecución.</p>
-					<p>if(< expresión >){</p>
-					<p>< instrucciones si true ></p>
-					<p>< valor de retorno del bloque ></p>
-					<p>}</p>
-					<p>else{</p>
-					<p>< instrucciones si false ></p>
-					<p>< valor retorno del bloque ></p>
-					<p>}</p>
-					<h3>Match:</h3>
-					<p>Las expresiones match de Scala se pueden utilizar para seleccionar entre una lista de alternativas, al igual que múltiples sentencias if:</p>
-					<p> </p>
-					<p>var myVar = “theValue”;</p>
-					<p>myVar match {</p>
-					<p>    case “someValue” => println(myVar + “1”);</p>
-					<p>    case “thisValue” => println(myVar + “2”);</p>
-					<p>    case “theValue” => println(myVar + “3”);</p>
-					<p>    case “doubleValue” => println(myVar + “4”);</p>
-					<p>}</p>
-					<p>Esta expresión match compara el valor de la variable miVar con los valores en cada uno de los cuatro estados de casos. Si el valor de myVar coincide con alguno de estos valores, el código siguiente a la declaración del caso emparejado se ejecuta.</p>
+					<div class="col-md-6">
+						<h3>If / else</h3>
+						<p>La estructura de control if, permite decidir sobre la ejecución de dos secuencias de instrucciones de manera condicional sobre una expresión que evalúa a verdadero o falso. Funciona de manera análoga al operador ternario del lenguaje C, es decir un bloque if retorna un valor al completar su ejecución.</p>
+						<p>if(< expresión >){</p>
+						<p>< instrucciones si true ></p>
+						<p>< valor de retorno del bloque ></p>
+						<p>}</p>
+						<p>else{</p>
+						<p>< instrucciones si false ></p>
+						<p>< valor retorno del bloque ></p>
+					</div>
+					<div class="col-md-6">
+						<span>
+						<img id="tipos" src="images/if.png" alt="Tipos de datos">
+						</span>
+					</div>
+				</div>
+				<div class="col-md-12  text-center" >
+						<h3>Match:</h3>
+						<p>Las expresiones match de Scala se pueden utilizar para seleccionar entre una lista de alternativas, al igual que múltiples sentencias if:</p>
+						<p> </p>
+						<p>var myVar = “theValue”;</p>
+						<p>myVar match {</p>
+						<p>    case “someValue” => println(myVar + “1”);</p>
+						<p>    case “thisValue” => println(myVar + “2”);</p>
+						<p>    case “theValue” => println(myVar + “3”);</p>
+						<p>    case “doubleValue” => println(myVar + “4”);</p>
+						<p>}</p>
+						<p>Esta expresión match compara el valor de la variable miVar con los valores en cada uno de los cuatro estados de casos. Si el valor de myVar coincide con alguno de estos valores, el código siguiente a la declaración del caso emparejado se ejecuta.</p>
 				</div>
 			</div>
 
@@ -131,31 +143,36 @@
 	<div id="fh5co-started">
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+				<div class="col-md-12  text-center fh5co-heading" >
 					<h2>Instrucciones de repetición(for,while,do while)</h2>
-					<p> </p>
-					<h3>While:</h3>
-					<p>La estructura de control while funciona de la misma forma que en otros lugares de programación: sirve para repetir uan secuencia de instrucciones mientras cierta condición se cumpla, la ejecución del bloque no se da cuando la condición se hace falsa.</p>
-					<p>Su sintaxis quedaría:</p>
-					<p>    While(condition){</p>
-					<p>        Statements(s);</p>
-					<p>        }</p>
-					<p> </p>
-					<h3>Do While:</h3>
-					<p>Muy similar a While, excepto que su condición se ejecuta después del cuerpo del bucle. El bloque do-while sirve para ejecutar una secuencia de instrucciones y repetir la ejecución del bloque hasta que una condición se haga falsa.</p>
-					<p>Su sintaxis quedaría:</p>
-					<p>Do{</p>
-					<p>        Statement</p>
-					<p>(S);</p>
-					<p>} while(condition);</p>
-					<p> </p>
-					<h3>For:</h3>
-					<p>En Scala, el for también ejecuta cierto bloque de código, siempre que una condición sea verdadera. Sin embargo, es diferente a While.</p>
-					<p>Ejemplo:</p>
-					<p>var a = 0;</p>
-					<p>for (a < -1 to 10)</p>
-					<p>    println("Value of a:" + a);</p>
-					<p>}</p>
+					<div class="col-md-4  text-center cuadros">
+						<h3>While:</h3>
+						<p>La estructura de control while funciona de la misma forma que en otros lugares de programación: sirve para repetir uan secuencia de instrucciones mientras cierta condición se cumpla, la ejecución del bloque no se da cuando la condición se hace falsa.</p>
+						<p>Su sintaxis quedaría:</p>
+						<p>    While(condition){</p>
+						<p>        Statements(s);</p>
+						<p>        }</p>
+						<p> </p>
+					</div>
+					<div class="col-md-4  text-center cuadros">
+						<h3>Do While:</h3>
+						<p>Muy similar a While, excepto que su condición se ejecuta después del cuerpo del bucle. El bloque do-while sirve para ejecutar una secuencia de instrucciones y repetir la ejecución del bloque hasta que una condición se haga falsa.</p>
+						<p>Su sintaxis quedaría:</p>
+						<p>Do{</p>
+						<p>        Statement</p>
+						<p>(S);</p>
+						<p>} while(condition);</p>
+						<p> </p>
+					</div>
+					<div class="col-md-4 text-center cuadros">
+						<h3>For:</h3>
+						<p>En Scala, el for también ejecuta cierto bloque de código, siempre que una condición sea verdadera. Sin embargo, es diferente a While.</p>
+						<p>Ejemplo:</p>
+						<p>var a = 0;</p>
+						<p>for (a < -1 to 10)</p>
+						<p>    println("Value of a:" + a);</p>
+						<p>}</p>
+					</div>
 				</div>
 			</div>
 		</div>
