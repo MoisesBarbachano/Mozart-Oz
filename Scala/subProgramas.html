@@ -97,35 +97,41 @@
 
 			<div class="row animate-box">
 				<div class="feature-center">
-					<span class="icon">
-						<i class="icon-help2"></i>
-					</span>
-					<h3>Bloques</h3>
-					<p>Puedes combinar expresiones con “{ }”. Y a esto le podemos llamar bloque. El resultado de la última expresión en el bloque es el resultado de todo el bloque en general.</p>
-					<p> </p>
-					<p>println({</p>
-					<p>    val x = 1+1</p>
-					<p>    x + 1</p>
-					<p>})</p>
+					<div class = "col-md-6">
+						<h3>Bloques</h3>
+						<p>Puedes combinar expresiones con “{ }”. Y a esto le podemos llamar bloque. El resultado de la última expresión en el bloque es el resultado de todo el bloque en general.</p>
+						<p> </p>
+						<p>println({</p>
+						<p>    val x = 1+1</p>
+						<p>    x + 1</p>
+						<p>})</p>
+					</div>
+					<div class="col-md-6 ">
+						<span >
+						<img id="llaves." src="images/llaves.png" alt="llaves_imagen">
+						</span>
+					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
 
 	<div id="fh5co-started">
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+				<div class="col-md-12  text-center fh5co-heading">
 					<h3>Funciones</h3>
+					<div class="col-md-6  text-center fh5co-heading cuadros">
 					<p>Las funciones son expresiones que pueden tomar parámetros.
-Puedes definir una función anónima(sin nombre) que regrese un entero más uno:</p>
+		Puedes definir una función anónima(sin nombre) que regrese un entero más uno:</p>
 					<p>(x: Int) => x + 1</p>
 					<p>Por la izquierda de => hay una lista de parámetros. A la derecha es una expresión que envuelve los parámetros.</p>
 					<p>Igualmente puede nombrar a las funciones:</p>
 					<p> </p>
 					<p>val addOne = (x: Int) => x + 1</p>
 					<p>println(addOne(1)) // 2</p>
+				</div>
+				<div class="col-md-6  text-center fh5co-heading cuadros">
 					<p>Las funciones pueden tomar múltiples parámetros:</p>
 					<p>val add = (x: Int, y : Int) => x + 1</p>
 					<p>println(add(1,2)) // 3</p>
@@ -134,58 +140,76 @@ Puedes definir una función anónima(sin nombre) que regrese un entero más uno:
 					<p>val getTheAnswer = () => 42</p>
 					<p>println(getAnswer()) // 42</p>
 				</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<div id="fh5co-services-section">
 		<div class="container">
-
 			<div class="row animate-box">
 				<div class="feature-center">
-					<span class="icon">
-						<i class="icon-help2"></i>
-					</span>
 					<h3>Métodos</h3>
-					<p>Los métodos lucen y se comportan de manera similar a las funciones, pero hay unas pocas diferencias clave entre ellos.
-						Los métodos son definidos con la palabra clave “def”. “def” es seguido por un nombre, lista de parámetros, tipo de retorno y un cuerpo.</p>
-					<p>def add(x: Int, y: Int ): Int = x + y</p>
-					<p>println(add(1,2))</p>
-					<p>Observa como el tipo de retorno es declarado después de la lista de parámetros y  “: Int”.</p>
-					<p>Los métodos pueden tomar múltiples listas de parámetros:</p>
-					<p><strong>def addThenMultiply</strong>(x: Int, y: Int)(multiplier: Int): Int = (x + y) * multiplier</p>
-					<p>println(addThenMultiply(1, 2)(3)) // 9</p>
-					<p>O ninguna lista de parámetros:</p>
-					<p> <strong>def name:</strong>String = System.getProperty("user.name")</p>
-					<p>println("Hello, " + name + "!")</p>
-					<p> </p>
-					<p>Los métodos pueden ser expresiones multilineas</p>
-					<p> <strong>def getSquareString</strong>(input: Double): String = {</p>
-					<p>  val square = input * input</p>
-					<p>  square.toString</p>
-					<p>}</p>
-					<p> </p>
-					<p>La última expresion en el cuerpo es el tipo de retorno de valor del método. (Scala  tiene un “return”, pero rara vez es usado).</p>
+					<div class="col-md-10 col-md-offset-1 text-center">
+						<div class="col-md-4">
+							<div class="banda">
+
+							</div>
+							<div class="text-center soft">
+								<p>Los métodos lucen y se comportan de manera similar a las funciones, pero hay unas pocas diferencias clave entre ellos.
+									Los métodos son definidos con la palabra clave “def”. “def” es seguido por un nombre, lista de parámetros, tipo de retorno y un cuerpo.</p>
+								<p>def add(x: Int, y: Int ): Int = x + y</p>
+								<p>println(add(1,2))</p>
+								<p>Observa como el tipo de retorno es declarado después de la lista de parámetros y  “: Int”.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="banda">
+
+							</div>
+							<div class="text-center soft">
+								<p>Los métodos pueden tomar múltiples listas de parámetros:</p>
+								<p><strong>def addThenMultiply</strong>(x: Int, y: Int)(multiplier: Int): Int = (x + y) * multiplier</p>
+								<p>println(addThenMultiply(1, 2)(3)) // 9</p>
+								<p>O ninguna lista de parámetros:</p>
+								<p> <strong>def name:</strong>String = System.getProperty("user.name")</p>
+								<p>println("Hello, " + name + "!")</p>
+								<p> </p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="banda">
+							</div>
+							<div class="text-center soft">
+								<p>Los métodos pueden ser expresiones multilineas</p>
+								<p> <strong>def getSquareString</strong>(input: Double): String = {</p>
+								<p>  val square = input * input</p>
+								<p>  square.toString</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-
+			<p>La última expresion en el cuerpo es el tipo de retorno de valor del método. (Scala  tiene un “return”, pero rara vez es usado).</p>
 		</div>
 	</div>
 
 	<div id="fh5co-started">
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+				<div class="col-md-12  text-center fh5co-heading">
 					<h3>Clases</h3>
-					<p>Puedes definir clases con la palabra clave seguida por su nombre y parámetros de constructor.</p>
-					<p><strong>class Greeter</strong>(prefix: String, suffix: String) {</p>
-					<p><strong>def greet</strong>(name: String): Unit = </p>
-					<p>println(prefix + name + sufix)</p>
-					<p>}</p>
-					<p> </p>
+					<div class="col-md-6  text-center fh5co-heading cuadros">
+						<p>Puedes definir clases con la palabra clave seguida por su nombre y parámetros de constructor.</p>
+						<p><strong>class Greeter</strong>(prefix: String, suffix: String) {</p>
+						<p><strong>def greet</strong>(name: String): Unit = </p>
+						<p>println(prefix + name + sufix)</p>
+				</div>
+				<div class="col-md-6  text-center fh5co-heading cuadros">
 					<p>Tú puedes hacer una instancia de la clase con la palabra clave “new”.</p>
 					<p>val greeter = new Greeter("Hello, ", "!")</p>
 					<p>greeter.greet("Scala developer") // Hello, Scala developer!</p>
+				</div>
 				</div>
 			</div>
 		</div>
@@ -196,17 +220,16 @@ Puedes definir una función anónima(sin nombre) que regrese un entero más uno:
 
 			<div class="row animate-box">
 				<div class="feature-center">
-					<span class="icon">
-						<i class="icon-help2"></i>
-					</span>
 					<h3>Case clases</h3>
-					<p>Scala tiene un tipo especial de clase llamado un “case” class. Por defecto, las case clases son inmutables y comparadas por valor. Tú puedes definir case clases con la palabra “case class”.</p>
+					<table style="width:100%">
+					<td><p>Scala tiene un tipo especial de clase llamado un “case” class. Por defecto, las case clases son inmutables y comparadas por valor. Tú puedes definir case clases con la palabra “case class”.</p>
 					<p><strong>case class Point</strong>(x: Int,y: Int)</p>
 					<p> </p>
 					<p>Puedes instanciar las case clases sin la palabra clave “new”.</p>
 					<p>val point = Point(1, 2)</p>
 					<p>val anotherPoint = Point(1, 2)</p>
 					<p>val yetAnotherPoint = Point(2, 2)</p>
+				</td></table>
 				</div>
 			</div>
 
@@ -216,47 +239,63 @@ Puedes definir una función anónima(sin nombre) que regrese un entero más uno:
 	<div id="fh5co-started">
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h3>Objetos</h3>
-					<p>Los objetos son instancias simples de sus propias definiciones. Puedes pensar en ellos como singletons de sus propias clases.</p>
-					<p>Puedes definir objetos con la palabra clave objeto.</p>
-					<p><strong>object IdFactory{</strong></p>
-					<p> private var counter = 0</p>
-					<p> def create(): Int = {</p>
-					<p>    counter += 1</p>
-					<p>    counter</p>
-					<p> }</p>
-					<p>}</p>
-					<p> </p>
-					<p>Puedes tener acceso a un objeto refiriéndose por su nombre.</p>
-					<p>val newId: Int = IdFactory.create()</p>
-					<p>println(newId) // 1</p>
-					<p>val newerId: Int = IdFactory.create()</p>
-					<p>println(newerId) // 2</p>
+				<div class="feature-center">
+					<h3> <strong>Objetos</strong></h3>
+					<div class="col-md-12 text-center">
+						<div class="col-md-6">
+							<div class="banda">
+							</div>
+							<div class="text-center soft">
+								<p>Los objetos son instancias simples de sus propias definiciones. Puedes pensar en ellos como singletons de sus propias clases.</p>
+								<p>Puedes definir objetos con la palabra clave objeto.</p>
+								<p><strong>object IdFactory{</strong></p>
+								<p> private var counter = 0</p>
+								<p> def create(): Int = {</p>
+								<p>    counter += 1</p>
+								<p>    counter</p>
+							</div>
+					</div>
+				<div class="col-md-6">
+					<div class="banda">
+					</div>
+						<div class="text-center soft">
+							<p>Puedes tener acceso a un objeto refiriéndose por su nombre.</p>
+							<p>val newId: Int = IdFactory.create()</p>
+							<p>println(newId) // 1</p>
+							<p>val newerId: Int = IdFactory.create()</p>
+							<p>println(newerId) // 2</p>
+						</div>
 				</div>
+			</div>
+			</div>
 			</div>
 		</div>
 	</div>
 
 	<div id="fh5co-services-section">
 		<div class="container">
-
 			<div class="row animate-box">
 				<div class="feature-center">
-					<span class="icon">
-						<i class="icon-help2"></i>
-					</span>
 					<h3>Hilos</h3>
+					<div class="col-md-12 ">
+					<div class="col-md-6 ">
 					<p>Traits son tipos que contienen ciertos campos y métodos. Múltiples traits pueden ser combinados.</p>
 					<p>Puedes definir traits con la palabra clave “trait”.</p>
-					<p><strong>trait Greeter</strong>{</p>
-					<p>  def greet(name:String): Unit</p>
-					<p>}</p>
+					<table style="width:100%">
+					<td><p><strong>trait Greeter</strong>{</p>
+					<p>  def greet(name:String): Unit</p><td>
+					</table>
+					</div>
+					<div class="col-md-6 ">
 					<p>Los Traits también pueden tener implementaciones por default.</p>
-					<p><strong>trait Greeter</strong>{</p>
+					<table style="width:100%">
+					<td><p><strong>trait Greeter</strong>{</p>
 					<p>  def greet(name:String): Unit=</p>
-					<p>     println("Hello," + name + "!")</p>
-					<p>}</p>
+					<p>     println("Hello," + name + "!")</p><td>
+					</table>
+					</div>
+					</div>
+					<p></p>
 					<p>Puedes extender traits con la palabra clave extends y anular una implementación con la palabra clave “override”.</p>
 				</div>
 			</div>
@@ -266,8 +305,9 @@ Puedes definir una función anónima(sin nombre) que regrese un entero más uno:
 	<div id="fh5co-started">
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+				<div class="col-md-12  text-center fh5co-heading">
 					<h3>Método Main</h3>
+					<div class="col-md-12 cuadros">
 					<p>El método main es un punto de entrada del programa.  La máquina virtual de Java requiere un método main para ser llamado “main” y toma un argumento, un array de strings.</p>
 					<p>Usando un objeto, puedes definir un método main como el siguiente:</p>
 					<p><strong>object Main</strong>{</p>
